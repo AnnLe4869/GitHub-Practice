@@ -1,11 +1,11 @@
 // Own way to flatten an array.
 // Fail with unknown reason
 // The result print out is the same as the argument array
-function flattenTheArray(array) {
+function flattenArray(array) {
     return array.map(ele => {
         // Use isArray() is safer than instanceof
         if (Array.isArray(ele)) {
-            return flattenTheArray(ele);
+            return flattenArray(ele);
         } else {
             return flattenOneElement(ele);
         }
@@ -20,4 +20,4 @@ function flattenOneElement(element) {
     }
 }
 
-console.log(flattenTheArray([1, [2], [3, [[4]]]]));
+console.log(flattenArray([1, [2], [3, [[4]]]]));
