@@ -1,3 +1,3 @@
 # GitHub-Practice
 
-This is just an GitHub site I make to
+This is just an GitHub page I make to practice with Git and GitHub
