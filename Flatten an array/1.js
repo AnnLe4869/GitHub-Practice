@@ -1,6 +1,6 @@
 // Own way to flatten an array.
 // Fail with unknown reason
-// Can't understand why it doesn't work
+// The result print out is the same as the argument array
 function flattenArray(array) {
     return array.map(ele => {
         if (Array.isArray(ele)) {
