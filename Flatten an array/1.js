@@ -3,6 +3,7 @@
 // Can't understand why it doesn't work
 function flattenArray(array) {
     return array.map(ele => {
+        // Use isArray() is safer than instanceof
         if (Array.isArray(ele)) {
             return flattenArray(ele);
         } else {
